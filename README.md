@@ -4,7 +4,7 @@ Module for the booking component of Airbnb clone.
 
 
 ## Info
-Default port is 3000
+Default port is 3004
 
 Express serving static files out of components/public
 
