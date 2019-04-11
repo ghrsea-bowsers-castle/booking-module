@@ -1,7 +1,2 @@
 node_modules
-.babelrc
-reference_for_booking_component.png
-Booking_Component_4-9-19.png
-db/booking_db_schema.png
-client/src
-client/tests
+npm-debug.log
