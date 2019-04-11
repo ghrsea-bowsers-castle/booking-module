@@ -1,2 +1,8 @@
 node_modules
 npm-debug.log
+.babelrc
+reference_for_booking_component.png
+webpack.config.js
+client/src
+client/tests
+Booking_Component_4-9-19.png

@@ -5,6 +5,8 @@ const app = express();
 
 const PORT = 3004;
 
+//const boring = require("../mysql-boring.js");
+
 app.use("/:id", express.static(__dirname + "/../client/public"));
 
 
@@ -12,9 +14,11 @@ app.use("/:id", express.static(__dirname + "/../client/public"));
 app.use(bodyParse.json());
 
 const connection = mysql.createConnection({
-    host: 'database',
-    user: "Hades",
-    database: "bookings"
+  host: "database",
+  port: '3306',
+  user: "root",
+  database: "bookings",
+  password: "----"
 });
 
 connection.connect((err) => {

@@ -62,3 +62,6 @@ typings/
 
 #mysql vars
 mysql-boring.js
+
+#docker yml
+docker-compose.yml

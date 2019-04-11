@@ -1,5 +1,7 @@
 var mysql = require('mysql');
 
+//const boring = require('../mysql_boring.js');
+
 function guestLimitGenerator () {
     return Math.floor(Math.random() * (20 - 2) + 2);
 }
@@ -82,8 +84,10 @@ const thirtyDaysOfRentals = rentalsAvailabilityGenerator(hundredRentals, 30);
 
 const connection = mysql.createConnection({
     host: 'database',
-    user: "Hades",
-    database: "bookings"
+    port: '3306',
+    user: "root",
+    database: "bookings",
+    password: "----"
 })
 
 // console.log(tenRentals);
