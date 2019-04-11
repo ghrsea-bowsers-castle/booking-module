@@ -81,7 +81,8 @@ const thirtyDaysOfRentals = rentalsAvailabilityGenerator(hundredRentals, 30);
 
 
 const connection = mysql.createConnection({
-    user: "root",
+    host: 'database',
+    user: "Hades",
     database: "bookings"
 })
 

@@ -12,7 +12,8 @@ app.use("/:id", express.static(__dirname + "/../client/public"));
 app.use(bodyParse.json());
 
 const connection = mysql.createConnection({
-    user: "root",
+    host: 'database',
+    user: "Hades",
     database: "bookings"
 });
 

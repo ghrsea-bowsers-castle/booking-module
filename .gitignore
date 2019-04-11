@@ -59,3 +59,6 @@ typings/
 
 # next.js build output
 .next
+
+#mysql vars
+mysql-boring.js

@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "react-compile": "webpack -d --watch",
-    "start": "nodemon server/app.js",
+    "start": "node server/app.js",
+    "nodemon-start": "nodemon server/app.js",
     "seed": "node db/seed.js",
     "test": "jest --watch",
     "tests-coverage": "jest --coverage --colors"
