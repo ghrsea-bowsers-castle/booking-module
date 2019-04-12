@@ -1,3 +1,3 @@
-const boringWord = "Sh0uldHav4Kn0wnBetter!1516";
+const boringWord = "H4d3s";
 
 exports.module.boringWord = boringWord;

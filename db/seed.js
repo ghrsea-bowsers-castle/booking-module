@@ -83,12 +83,12 @@ const thirtyDaysOfRentals = rentalsAvailabilityGenerator(hundredRentals, 30);
 
 
 const connection = mysql.createConnection({
-    host: 'database',
-    port: '3306',
-    user: "root",
-    database: "bookings",
-    password: "----"
-})
+  host: "database",
+  port: "3306",
+  user: "root",
+  database: "bookings",
+  password: "----"
+});
 
 // console.log(tenRentals);
 

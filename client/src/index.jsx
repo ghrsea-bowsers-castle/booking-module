@@ -24,6 +24,7 @@ class Booking extends React.Component {
         //rather fragily and then passes the id
         //on to the getData function
         let id = document.URL.split('/')[3];
+        id = Number(id) + 99;
         this.getRentalDataForId(id);
         this.getAvailabilityDataForId(id);
     }
