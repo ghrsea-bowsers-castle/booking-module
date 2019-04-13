@@ -7,6 +7,8 @@ import Guests from './components/guests.jsx';
 import Calendar from './components/calendar.jsx';
 import Book from './components/book-button.jsx';
 
+const baseURL = "http://ec2-54-184-105-91.us-west-2.compute.amazonaws.com:3004";
+
 class Booking extends React.Component {
     constructor() {
         super();
@@ -24,7 +26,7 @@ class Booking extends React.Component {
         //rather fragily and then passes the id
         //on to the getData function
         let id = document.URL.split('/')[3];
-        id = Number(id) + 99;
+         id = Number(id) + 99;
         this.getRentalDataForId(id);
         this.getAvailabilityDataForId(id);
     }
@@ -34,7 +36,9 @@ class Booking extends React.Component {
         //it gets the value from the server and is given the entire body
         //of data for the rental entry according to the id and sets the 
         //state accordingly
-        axios.get(`/getrentaldata/${id}`)
+
+        ///get root directory for url
+        axios.get(baseURL + `/getrentaldata/${id}`)
         .then((results)=>{
             this.setState({
                 currentRental: results.data[0]
@@ -46,7 +50,7 @@ class Booking extends React.Component {
     }
 
     getAvailabilityDataForId(id) {
-        axios.get(`/getavailabilitydata/${id}`)
+        axios.get(baseURL + `/getavailabilitydata/${id}`)
         .then((results)=> {
             this.setState({
                 availability: results.data
