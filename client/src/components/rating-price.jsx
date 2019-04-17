@@ -1,5 +1,5 @@
 import React from "react";
-import Starratings from 'react-star-ratings';
+// import Starratings from 'react-star-ratings';
 
 import styles from '../css/style.css';
 
@@ -7,9 +7,9 @@ import styles from '../css/style.css';
 const Price = props => {
   return <div className={styles['basic-font']}>
     <p> ${props.data && props.data.price} a night</p>
-    <Starratings 
+    {/* <Starratings 
     rating = {props.rating}
-    starDimension = '20px'/>
+    starDimension = '20px'/> */}
     
   </div>
 }

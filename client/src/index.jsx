@@ -45,7 +45,7 @@ class Booking extends React.Component {
             })
         })
         .catch((err) => {
-            console.log(`error on client getting rental data`, err);
+            console.log(`error in client getting rental data from server`, err);
         })
     }
 
@@ -57,7 +57,7 @@ class Booking extends React.Component {
             })
         })
         .catch((err)=>{
-            console.log(`error getting availability on client`, err);
+            console.log(`error in client getting availability data from server`, err);
         })
 
     }
